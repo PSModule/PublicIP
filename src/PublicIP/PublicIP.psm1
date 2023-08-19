@@ -68,5 +68,3 @@ Function Get-GeoLocation {
     $GeoWatcher.Stop()
     return $Location
 }
-
-Export-ModuleMember -Function * -Cmdlet * -Variable * -Alias *
