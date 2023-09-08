@@ -1,6 +1,16 @@
-﻿Function Get-PublicIP {
-    #Invoke-RestMethod -Uri https://api.myip.com/
-    Invoke-RestMethod -Uri https://ipinfo.io/json
+﻿$script:providerMap = @{
+    MyIP   = 'https://api.myip.com/'
+    IPInfo = 'https://ipinfo.io/json'
+}
+
+Function Get-PublicIP {
+    param(
+        [Parameter(Mandatory = $false)]
+        [ValidateScript({$providerMap.Keys})]
+        $Provider = 'IPInfo'
+    )
+
+    Invoke-RestMethod -Uri $providerMap[$Provider]
 }
 
 Function Get-IPConfig {
