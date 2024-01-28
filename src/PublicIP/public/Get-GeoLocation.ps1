@@ -1,4 +1,15 @@
 function Get-GeoLocation {
+    <#
+        .SYNOPSIS
+        Gets the current location of the device.
+
+        .DESCRIPTION
+        Gets the current location of the device.
+
+        .EXAMPLE
+        Get-GeoLocation
+    #>
+
     Add-Type -AssemblyName System.Device #Required to access System.Device.Location namespace
     $GeoWatcher = New-Object System.Device.Location.GeoCoordinateWatcher #Create the required object
     $GeoWatcher.Start() #Begin resolving current locaton

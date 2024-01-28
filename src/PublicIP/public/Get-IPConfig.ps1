@@ -1,4 +1,15 @@
 ﻿function Get-IPConfig {
+    <#
+        .SYNOPSIS
+        Gets the current IP configuration.
+
+        .DESCRIPTION
+        Gets the current IP configuration.
+
+        .EXAMPLE
+        Get-IPConfig
+    #>
+
     $PublicIP = Get-PublicIP
     $Time = Get-Date -Format yyyyMMdd-hhmmss.fffff
     $Location = Get-GeoLocation

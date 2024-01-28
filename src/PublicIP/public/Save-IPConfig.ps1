@@ -1,4 +1,15 @@
 ﻿function Save-IPConfig {
+    <#
+        .SYNOPSIS
+        Saves the current public ip to a file.
+
+        .DESCRIPTION
+        Saves the current public ip to a file.
+        If the file does not exist, it will be created.
+
+        .EXAMPLE
+        Save-IPConfig
+    #>
     $IPConfig = @()
     $RestoredIPConfig = Restore-IPConfig
     if ($null -ne $RestoredIPConfig) {
