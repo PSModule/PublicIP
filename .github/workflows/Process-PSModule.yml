@@ -7,6 +7,10 @@ on:
 concurrency:
   group: ${{ github.workflow }}
 
+permissions:
+  contents: write
+  pull-requests: write
+
 jobs:
   Process-PSModule:
     uses: PSModule/Process-PSModule/.github/workflows/workflow.yml@main
