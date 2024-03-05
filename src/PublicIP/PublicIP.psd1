@@ -1,5 +1,5 @@
 ﻿@{
-    ModuleVersion = '0.1.0'
+    ModuleVersion = '0.0.1'
     Description   = 'PowerShell Module for Public IP'
     HelpInfoURI   = 'https://PSModule.github.io/PublicIP'
     PrivateData   = @{
