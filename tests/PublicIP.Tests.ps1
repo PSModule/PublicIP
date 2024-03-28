@@ -17,4 +17,18 @@ Describe 'PublicIP' {
             { Import-Module -Name 'PublicIP' -Verbose -RequiredVersion 999.0.0 -Force } | Should -Not -Throw
         }
     }
+
+    Context 'Get-PublicIP' {
+        It 'Should return the public IP address' {
+            $PublicIP = Get-PublicIP
+            $PublicIP | Should -Not -BeNullOrEmpty
+            Write-Verbose $PublicIP -Verbose
+        }
+
+        It 'Should return the public IP address from MyIP' {
+            $PublicIP = Get-PublicIP -Provider MyIP
+            $PublicIP | Should -Not -BeNullOrEmpty
+            Write-Verbose $PublicIP -Verbose
+        }
+    }
 }
