@@ -1,4 +1,4 @@
-# Fonts
+# PublicIP
 
 This is a PowerShell module for getting information about your public IP.
 It uses the APIs of [IPInfo](https://ipinfo.io) and [MyIP](https://www.myip.com/) to get this data.
