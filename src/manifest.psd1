@@ -1,5 +1,5 @@
 ﻿@{
-    PrivateData   = @{
+    PrivateData = @{
         PSData = @{
             Tags = @(
                 'PublicIP'
@@ -11,4 +11,3 @@
         }
     }
 }
-
