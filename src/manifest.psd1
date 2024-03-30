@@ -1,6 +1,5 @@
 ﻿@{
-    ModuleVersion = '0.0.1'
-    PrivateData   = @{
+    PrivateData = @{
         PSData = @{
             Tags = @(
                 'PublicIP'
@@ -12,4 +11,3 @@
         }
     }
 }
-
