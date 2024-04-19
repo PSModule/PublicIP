@@ -12,6 +12,7 @@
         .EXAMPLE
         Get-PublicIP -Provider MyIP
     #>
+    [CmdletBinding()]
     param(
         # The provider to use to get the public IP address.
         [Parameter()]
