@@ -1,13 +1,4 @@
-﻿[CmdletBinding()]
-Param(
-    # Path to the module to test.
-    [Parameter()]
-    [string] $Path
-)
-
-Write-Verbose "Path to the module: [$Path]" -Verbose
-
-Describe 'PublicIP' {
+﻿Describe 'PublicIP' {
     Context 'Get-PublicIP' {
         It 'Should return the public IP address' {
             $PublicIP = Get-PublicIP
