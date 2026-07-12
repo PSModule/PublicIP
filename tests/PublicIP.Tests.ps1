@@ -1,4 +1,6 @@
-﻿Describe 'PublicIP' {
+﻿#Requires -Modules @{ ModuleName = 'Pester'; ModuleVersion = '6.0.0'; MaximumVersion = '6.*' }
+
+Describe 'PublicIP' {
     Context 'Get-PublicIP' {
         It 'Should return the public IP address' {
             $PublicIP = Get-PublicIP
